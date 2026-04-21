@@ -1,0 +1,20 @@
+{
+  "rewrites": [
+    {
+      "source": "/wp-content/:path(.*)",
+      "destination": "https://sbayfc.wpengine.com/wp-content/:path"
+    },
+    {
+      "source": "/wp-includes/:path(.*)",
+      "destination": "https://sbayfc.wpengine.com/wp-includes/:path"
+    },
+    {
+      "source": "/wp-json/:path(.*)",
+      "destination": "https://sbayfc.wpengine.com/wp-json/:path"
+    },
+    {
+      "source": "/:path((?!_next|api|images|flags/|favicon\\.ico|robots\\.txt|tickets(?:/$|$)|tickets/offers(?:/|$)).+)",
+      "destination": "https://sbayfc.wpengine.com/:path"
+    }
+  ]
+}
