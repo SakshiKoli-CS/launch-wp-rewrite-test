@@ -7,3 +7,10 @@ export default function Tickets() {
     </div>
   );
 }
+
+// Adding this function forces Next.js to treat this page as Server-Side Rendered (SSR)
+export async function getServerSideProps(context) {
+  return {
+    props: {}, // will be passed to the page component as props
+  };
+}
