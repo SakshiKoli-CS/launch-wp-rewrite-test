@@ -13,6 +13,14 @@
       "destination": "https://sbayfc.wpengine.com/wp-json/:path"
     },
     {
+      "source": "/news",
+      "destination": "https://sbayfc.wpengine.com/news/"
+    },
+    {
+      "source": "/news/:path(.*)",
+      "destination": "https://sbayfc.wpengine.com/news/:path"
+    },
+    {
       "source": "/:path((?!_next|api|images|flags/|favicon\\.ico|robots\\.txt|tickets(?:/$|$)|tickets/offers(?:/|$)).+)",
       "destination": "https://sbayfc.wpengine.com/:path"
     }
